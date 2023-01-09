@@ -1,0 +1,11 @@
+.main_bg {
+    animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    width:100%;
+    max-width: 1600px;
+    min-height:750px;
+    background-image: url('https://user-images.githubusercontent.com/63601183/182406040-d05ae4a4-e48a-43d9-94d3-e4b3e1e3e9c8.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+}
