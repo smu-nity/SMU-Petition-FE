@@ -6,22 +6,28 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="static/css/home.css" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div include-html="reference/navbar.html"></div>
 
-    <section>
-        <div class="container main_bg">
-            <div class="row justify-content-between">
-                <div class="col-lg-6 text-light"></div>
-                <div class="col-lg-5 mt-5">
-                    <br><br><br><br><br><br>
-                    <h1 class="display-1 fw-bold lh-1 mb-5 text-light">Smunity</h1>
-                    <p class="col-lg-10 fs-1 text-light">상명대학교<br>청원 사이트</p>
-                </div>
+
+    <div class="container">
+        <h5 class="my-3 border-bottom pb-2">청원 등록</h5>
+        <form method="post" class="post-form my-3">
+            <div class="mb-3">
+                <label for="subject" class="form-label">제목</label>
+                <input type="text" class="form-control" name="subject" id="subject">
             </div>
-        </div>
-    </section>
+            <div class="mb-3">
+                <label for="content" class="form-label">내용</label>
+                <textarea class="form-control" name="content"
+                          id="content" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">저장하기</button>
+        </form>
+    </div>
+
 
     <div include-html="reference/footer.html"></div>
 </body>
