@@ -1,0 +1,27 @@
+<!-- 페이징처리 시작 -->
+<ul class="pagination justify-content-center">
+    <li class="page-item">
+        <a class="page-link" data-page="{{ question_list.previous_page_number }}"
+           href="javascript:void(0)">이전</a>
+    </li>
+
+    <!-- 페이지리스트 -->
+    <li class="page-item active" aria-current="page">
+        <a class="page-link" data-page="{{ page_number }}"
+           href="javascript:void(0)">1</a>
+    </li>
+    <li class="page-item active" aria-current="page">
+        <a class="page-link" data-page="{{ page_number }}"
+           href="javascript:void(0)">2</a>
+    </li>
+    <li class="page-item active" aria-current="page">
+        <a class="page-link" data-page="{{ page_number }}"
+           href="javascript:void(0)">3</a>
+    </li>
+    <!-- 다음페이지 -->
+    <li class="page-item disabled">
+        <a class="page-link" tabindex="-1" aria-disabled="true"
+           href="javascript:void(0)">다음</a>
+    </li>
+</ul>
+<!-- 페이징처리 끝 -->
