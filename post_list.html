@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="static/css/post_list.css" media="screen">
+    <title>상명대학교 - 청원게시판</title>
+    <link rel="stylesheet" href="static/css/styles.css" media="screen">
     <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -27,25 +26,48 @@
             </div>
         </div>
         <table class="table">
-            <thead>
-            <tr class="text-center table-dark">
+            <thead class="table-head">
+            <tr class="text-center table-sangmyung__header">
                 <th>번호</th>
+                <th>말머리</th>
                 <th style="width:50%">제목</th>
                 <th>글쓴이</th>
-                <th>작성일시</th>
+                <th>추천</th>
+                <th>댓글</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody class="table-body">
                 <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
-                <tr include-html="sample/post_data.html"></tr>
+                <tr class="text-center table-sangmyung__body">
+                    <td>
+                        <span class="table-body__notice-icon">공지</span>
+                    </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start table-body__notice">
+                        <a href="{% url 'pybo:detail' question.id %}">청원게시판 소개</a>
+                    </td>
+                    <td>익명</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>9
+                    </td>
+                    <td class="table-body__comment">
+                        <i class="far fa-comment table-body__icon"></i>0</td>
+                </tr>
+                <tr class="text-center table-sangmyung__body">
+                    <td>
+                        2
+                    </td>
+                    <td class="table-body__complete">[답변완료]</td>
+                    <td class="text-start">
+                        <a href="{% url 'pybo:detail' question.id %}">공학인증제도 수정</a>
+                    </td>
+                    <td>익명</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>9
+                    </td>
+                    <td class="table-body__comment">
+                        <i class="far fa-comment table-body__icon"></i>0</td>
+                </tr>
             </tbody>
         </table>
         <div include-html="reference/pagination.html"></div>

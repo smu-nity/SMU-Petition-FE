@@ -1,0 +1,24 @@
+/* Nanum Gothic - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* bootstrap */
+@import "bootstrap/bootstrap.min.css";
+
+/* Screens */
+@import "home.css";
+@import "login.css";
+@import "signup.css";
+@import "post_detail.css";
+@import "post_form.css";
+@import "post_list.css";
+@import "comment_form.css";
+
+/* Variables */
+@import "variables.css";
+
+/* Components */
+
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
