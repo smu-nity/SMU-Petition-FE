@@ -50,3 +50,18 @@
 .table-body__complete {
     color: rgb(191, 72, 84);
 }
+
+.text-start {
+    display: flex;
+    align-items: center;
+}
+
+.table-body__new {
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(43, 143, 239);
+    padding: 1px 3px;
+    border-radius: 3px;
+}
