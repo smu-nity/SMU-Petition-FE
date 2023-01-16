@@ -5,7 +5,12 @@
     text-decoration: none;
 }
 
+.text-center {
+    display: table-row;
+}
+
 .table-sangmyung__body {
+    display: table-row;
     background-color: white;
     transition: all 0.3s ease-in-out;
 }
@@ -64,4 +69,14 @@
     background-color: rgb(43, 143, 239);
     padding: 1px 3px;
     border-radius: 3px;
+}
+
+td:not(:first-child) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+td:first-child {
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
