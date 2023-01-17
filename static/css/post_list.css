@@ -1,0 +1,82 @@
+.table-sangmyung__header {
+    background-color: white;
+    color: black;
+    border-top: 1px solid var(--sangmyung);
+    text-decoration: none;
+}
+
+.text-center {
+    display: table-row;
+}
+
+.table-sangmyung__body {
+    display: table-row;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.table-sangmyung__body:hover {
+    background-color: rgb(225, 228, 239);
+}
+
+.table-body__notice-icon {
+    font-size: 12px;
+    color: white;
+    background-color: rgb(252, 98, 8);
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.table-body__notice {
+    font-weight: 600;
+}
+
+.table-body__icon {
+    margin-right: 5px;
+}
+
+.table-body__like {
+    color: rgb(252, 52, 61);
+}
+
+.table-body__comment {
+    color: rgb(59, 111, 173);
+}
+
+.text-start a {
+    text-decoration: none;
+    color: black;
+}
+
+.table-body__proceeding {
+    color: rgb(42, 80, 135);
+}
+
+.table-body__complete {
+    color: rgb(191, 72, 84);
+}
+
+.text-start {
+    display: flex;
+    align-items: center;
+}
+
+.table-body__new {
+    font-size: 11px;
+    margin-right: 5px;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(43, 143, 239);
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+td:not(:first-child) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+td:first-child {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
