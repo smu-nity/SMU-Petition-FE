@@ -1,6 +1,8 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-nav px-1 py-1">
+<link rel="stylesheet" href="static/css/styles.css" media="screen">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-smu">
+    <div class="container-nav px-1 py-1 container-navsmu">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <span class="fs-4">Smunity</span>
         </a>
@@ -8,8 +10,8 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto navbar-navsmu">
                 <li class="nav-item">
                     <a class="nav-link fs-5" href="/accounts/login/">청원하기</a>
                 </li>
@@ -31,6 +33,27 @@
                         <a class="nav-link fs-5" href="/accounts/agree/">회원가입</a>
                     </li>
             </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <i class="fas fa-lock nav-item__icon"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search nav-item__icon"></i>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-bars nav-item__icon"></i>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
+
+<div class="navbar-img">
+    <img class="navbar-img-image" src="static/img/sangmyung_century.jpg"  style="width: 100%; height: 300px; object-fit:cover"/>
+
+    <div class="navbar-img__text">
+        <span class="navbar-img__text--title">청원 게시판</span>
+        <span class="navbar-img__text--subtitle">상명대학교 학우 여러분들의 의견에 귀를 기울이는 학생회가 되겠습니다.</span>
+    </div>
+</div>
+
