@@ -1,3 +1,67 @@
+.panel-group-smu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-post_list {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.petition-info__icon {
+    color: black;
+    font-size: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.petition-info {
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+.petition-info__count {
+    font-weight: 600;
+}
+
+.petition-info__complete {
+    font-weight: 600;
+}
+
+.petition-warning {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enroll-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.enroll-btn__icon {
+    margin-right: 10px;
+}
+
+.enroll-btn__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 25px;
+    width: 300px;
+    height: 100px;
+    color: black;
+    border-color: var(--sangmyung);
+    margin: 0px 10px;
+}
+
+.enroll-btn__btn:hover {
+    background-color: var(--sangmyung);
+}
+
+
 .nav-item__icon {
     margin: 0px 5px;
 }
@@ -93,13 +157,6 @@ td:first-child {
     padding-bottom: 17px;
 }
 
-.btn-primary {
-    background-color: var(--sangmyung);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .input-group {
     display: flex;
     justify-content: center;
@@ -107,6 +164,10 @@ td:first-child {
 }
 
 #search_kw {
-    width: 10px;
-    height: 70px;
+    margin-right: 20px;
+}
+
+.btn-smu {
+    background-color: var(--sangmyung);
+    color: white;
 }
