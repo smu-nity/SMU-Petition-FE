@@ -1,8 +1,20 @@
+.nav-item__icon {
+    margin: 0px 5px;
+}
+
+.navbar-smu {
+    font-weight: 300;
+}
+
 .table-sangmyung__header {
     background-color: white;
     color: black;
     border-top: 1px solid var(--sangmyung);
     text-decoration: none;
+}
+
+.table-body {
+    font-weight: 300;
 }
 
 .text-center {
@@ -79,4 +91,22 @@ td:not(:first-child) {
 td:first-child {
     padding-top: 17px;
     padding-bottom: 17px;
+}
+
+.btn-primary {
+    background-color: var(--sangmyung);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_kw {
+    width: 10px;
+    height: 70px;
 }
