@@ -9,3 +9,49 @@
     background-size: 100% 100%;
     margin: 0 auto;
 }
+
+.table-sangmyung__main_body {
+    display: table-row;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.home-title--hot {
+    margin-top: 100px;
+}
+
+.home-margin-150 {
+    margin-top: 100px;
+}
+
+.container-home {
+    width: 70%;
+}
+
+.petition-main_title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.home__table-head-roundness {
+    display: flex;
+    justify-content: space-between;
+}
+.home__table-nav-nav-size {
+    background-color: white;
+    color: black;
+    border-top: 1px solid var(--sangmyung);
+    text-decoration: none;
+}
+
+.home__table-head-roundness--li {
+    width: 50%;
+    text-align: center;
+    border-radius: 0 !important;
+}
+
+.home__table-nav-button {
+    border: 1px solid black;
+    border-radius: 7px;
+
+}
+
