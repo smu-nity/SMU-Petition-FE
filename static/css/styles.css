@@ -19,6 +19,9 @@
 /* Components */
 @import "navbar.css";
 
+/* Sample */
+@import "comment_data.css";
+
 body {
     font-family: 'Nanum Gothic', sans-serif;
 }

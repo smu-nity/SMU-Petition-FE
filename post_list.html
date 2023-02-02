@@ -43,187 +43,201 @@
                 </div>
                 <div class="col-4"></div>
                 <div class="col-5 petition-warning">
-                    <button class="btn btn-primary btn-smu" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">이런 청원은 삭제/숨김 또는 반려 처리 될 수
-                        있습니다.</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        이런 청원은 숨김/삭제처리 또는 반려 될 수 있습니다.
+                    </button>
 
-                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
-                        aria-labelledby="offcanvasTopLabel">
-                        <div class="offcanvas-header">
-                            <h4 id="offcanvasTopLabel">이런 청원은 삭제/숨김 또는 반려 처리될 수 있습니다.</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            ...
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <table class="table">
-            <thead class="table-head">
-                <tr class="text-center table-sangmyung__header">
-                    <th>번호</th>
-                    <th>말머리</th>
-                    <th style="width:50%">제목</th>
-                    <th>글쓴이</th>
-                    <th>추천</th>
-                    <th>댓글</th>
-                </tr>
-            </thead>
-            <tbody class="table-body">
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        <span class="table-body__notice-icon">공지</span>
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start table-body__notice">
-                        <a href="{% url 'pybo:detail' question.id %}">청원게시판 소개</a>
-                    </td>
-                    <td>총학생회</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>9
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        8
-                    </td>
-                    <td class="table-body__complete">[답변완료]</td>
-                    <td class="text-start">
-                        <a href="{% url 'pybo:detail' question.id %}">공학인증제도 수정</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>9
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        7
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start">
-                        <span class="table-body__new">N</span>
-                        <a href="{% url 'pybo:detail' question.id %}">스뮤니티 화이팅</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>999+
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>999+
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        6
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start">
-                        <a href="{% url 'pybo:detail' question.id %}">테스트6</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>12
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>14
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        5
-                    </td>
-                    <td class="table-body__complete">[답변완료]</td>
-                    <td class="text-start">
-                        <a href="{% url 'pybo:detail' question.id %}">테스트5</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>9
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        4
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start">
-                        <span class="table-body__new">N</span>
-                        <a href="{% url 'pybo:detail' question.id %}">테스트4</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>45
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>23
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        <span class="table-body__number">3</span>
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start">
-                        <a href="{% url 'pybo:detail' question.id %}">테스트3</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>0
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        2
-                    </td>
-                    <td class="table-body__complete">[답변완료]</td>
-                    <td class="text-start">
-                        <a href="{% url 'pybo:detail' question.id %}">테스트2</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>0
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
-                <tr class="text-center table-sangmyung__body">
-                    <td class="table-body__number">
-                        1
-                    </td>
-                    <td class="table-body__proceeding">[진행중]</td>
-                    <td class="text-start">
-                        <span class="table-body__new">N</span>
-                        <a href="{% url 'pybo:detail' question.id %}">테스트1</a>
-                    </td>
-                    <td>익명</td>
-                    <td class="table-body__like">
-                        <i class="far fa-thumbs-up table-body__icon"></i>0
-                    </td>
-                    <td class="table-body__comment">
-                        <i class="far fa-comment table-body__icon"></i>0
-                    </td>
-                </tr>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="table-head">
+                    <tr class="text-center table-sangmyung__header">
+                        <th>번호</th>
+                        <th>말머리</th>
+                        <th style="width:50%">제목</th>
+                        <th>글쓴이</th>
+                        <th>추천</th>
+                        <th>댓글</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            <span class="table-body__notice-icon">공지</span>
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start table-body__notice">
+                            <a href="{% url 'pybo:detail' question.id %}">청원게시판 소개</a>
+                        </td>
+                        <td>총학생회</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>9
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            8
+                        </td>
+                        <td class="table-body__complete">[답변완료]</td>
+                        <td class="text-start">
+                            <a href="{% url 'pybo:detail' question.id %}">공학인증제도 수정</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>9
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            7
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start">
+                            <span class="table-body__new">N</span>
+                            <a href="{% url 'pybo:detail' question.id %}">스뮤니티 화이팅</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>999+
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>999+
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            6
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start">
+                            <a href="{% url 'pybo:detail' question.id %}">테스트6</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>12
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>14
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            5
+                        </td>
+                        <td class="table-body__complete">[답변완료]</td>
+                        <td class="text-start">
+                            <a href="{% url 'pybo:detail' question.id %}">테스트5</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>9
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            4
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start">
+                            <span class="table-body__new">N</span>
+                            <a href="{% url 'pybo:detail' question.id %}">테스트4</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>45
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>23
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            <span class="table-body__number">3</span>
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start">
+                            <a href="{% url 'pybo:detail' question.id %}">테스트3</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>0
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            2
+                        </td>
+                        <td class="table-body__complete">[답변완료]</td>
+                        <td class="text-start">
+                            <a href="{% url 'pybo:detail' question.id %}">테스트2</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>0
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
+                    <tr class="text-center table-sangmyung__body">
+                        <td class="table-body__number">
+                            1
+                        </td>
+                        <td class="table-body__proceeding">[진행중]</td>
+                        <td class="text-start">
+                            <span class="table-body__new">N</span>
+                            <a href="{% url 'pybo:detail' question.id %}">테스트1</a>
+                        </td>
+                        <td>익명</td>
+                        <td class="table-body__like">
+                            <i class="far fa-thumbs-up table-body__icon"></i>0
+                        </td>
+                        <td class="table-body__comment">
+                            <i class="far fa-comment table-body__icon"></i>0
+                        </td>
+                    </tr>
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
+
         <div include-html="reference/pagination.html"></div>
     </div>
 

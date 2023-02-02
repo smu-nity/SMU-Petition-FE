@@ -1,0 +1,26 @@
+.comment_data-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_data-pagination {
+    margin: 10px;
+}
+
+.comment_data-time {
+    position: relative;
+    top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.comment_data-button {
+    position: relative;
+    left: 15px;
+}
+
+.comment_data-order {
+    color: var(--sangmyung);
+}

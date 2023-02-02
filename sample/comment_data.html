@@ -1,23 +1,99 @@
 <!-- 샘플 댓글 데이터 -->
 <a id="answer_{{ answer.id }}"></a>
-<div class="card my-3">
-    <div class="card-body">
-        <div class="card-text">동의합니다.</div>
-        <div class="d-flex justify-content-end">
-            <div class="badge bg-light text-dark p-2 text-start mx-3">
-                <div class="mb-2">modified at</div>
-                <div>23.01.13</div>
+
+<ul class="comment_data-container list-group list-group-flush">
+    <li class="list-group-item border-bottom comment_data-list">
+        <div class="comment_data-content">
+            <div class="commnet_data-left">
+                <div class="comment_data-order">
+                    <div>#4</div>
+                </div>
+                <div class="comment_data-agree">
+                    <div>동의합니다.</div>
+                </div>
             </div>
-            <div class="badge bg-light text-dark p-2 text-start">
-                <div class="mb-2">익명</div>
-                <div>23.01.11</div>
+            <div class="comment_data-right">
+                <div class="comment_data-date">
+                    <div class="comment_data-time">23-01-11 08:33</div>
+                    <div class="my-3 comment_data-button">
+                        <a href="{% url 'pybo:answer_modify' answer.id  %}"
+                            class="btn btn-sm btn-outline-secondary">수정</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary "
+                            data-uri="{% url 'pybo:answer_delete' answer.id  %}">삭제</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="my-3">
-            <a href="{% url 'pybo:answer_modify' answer.id  %}"
-               class="btn btn-sm btn-outline-secondary">수정</a>
-            <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary "
-               data-uri="{% url 'pybo:answer_delete' answer.id  %}">삭제</a>
+    </li>
+    <li class="list-group-item border-bottom comment_data-list">
+        <div class="comment_data-content">
+            <div class="commnet_data-left">
+                <div class="comment_data-order">
+                    <div>#3</div>
+                </div>
+                <div class="comment_data-agree">
+                    <div>동의합니다.</div>
+                </div>
+            </div>
+            <div class="comment_data-right">
+                <div class="comment_data-date">
+                    <div class="comment_data-time">23-01-11 08:33</div>
+                    <div class="my-3 comment_data-button comment_data-button--none">
+                        <a href="{% url 'pybo:answer_modify' answer.id  %}"
+                            class="btn btn-sm btn-outline-secondary">수정</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary "
+                            data-uri="{% url 'pybo:answer_delete' answer.id  %}">삭제</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </li>
+    <li class="list-group-item border-bottom comment_data-list">
+        <div class="comment_data-content">
+            <div class="commnet_data-left">
+                <div class="comment_data-order">
+                    <div>#2</div>
+                </div>
+                <div class="comment_data-agree">
+                    <div>동의합니다.</div>
+                </div>
+            </div>
+            <div class="comment_data-right">
+                <div class="comment_data-date">
+                    <div class="comment_data-time">23-01-11 08:33</div>
+                    <div class="my-3 comment_data-button comment_data-button--none">
+                        <a href="{% url 'pybo:answer_modify' answer.id  %}"
+                            class="btn btn-sm btn-outline-secondary">수정</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary "
+                            data-uri="{% url 'pybo:answer_delete' answer.id  %}">삭제</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item border-bottom comment_data-list">
+        <div class="comment_data-content">
+            <div class="commnet_data-left">
+                <div class="comment_data-order">
+                    <div>#1</div>
+                </div>
+                <div class="comment_data-agree">
+                    <div>동의합니다.</div>
+                </div>
+            </div>
+            <div class="comment_data-right">
+                <div class="comment_data-date">
+                    <div class="comment_data-time">23-01-11 08:33</div>
+                    <div class="my-3 comment_data-button comment_data-button--none">
+                        <a href="{% url 'pybo:answer_modify' answer.id  %}"
+                            class="btn btn-sm btn-outline-secondary">수정</a>
+                        <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary "
+                            data-uri="{% url 'pybo:answer_delete' answer.id  %}">삭제</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<div class="comment_data-pagination" include-html="reference/pagination.html"></div>
