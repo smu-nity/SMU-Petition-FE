@@ -1,29 +1,281 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" xmlns:magin="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="static/css/styles.css" media="screen">
+
 </head>
 <body>
     <div include-html="reference/navbar.html"></div>
 
-    <section>
-        <div class="container main_bg">
-            <div class="row justify-content-between">
-                <div class="col-lg-6 text-light"></div>
-                <div class="col-lg-5 mt-5">
-                    <br><br><br><br><br><br>
-                    <h1 class="display-1 fw-bold lh-1 mb-5 text-light">Smunity</h1>
-                    <p class="col-lg-10 fs-1 text-light">상명대학교<br>청원 사이트</p>
+    <div class="home-title--hot"> </div>
+    <div class="margin-side"> </div>
+
+    <!--HOT 게시판-->
+    <div class="container my-3 container-home">
+        <div class="row row-home">
+            <div class="col-6 petition-info">
+                <h1 class="petition-main_title"><span style="color:red;font-weight:bold">HOT</span> 청원</h1>
+            </div>
+            <hr>
+        <table class="table _home">
+            <thead class="table-head">
+                <tr class="text-center table-sangmyung__header">
+                    <th>분류</th>
+                    <th>상태</th>
+                    <th style="width:50%">제목</th>
+                    <th>청원 일자</th>
+                    <th>참여 인원</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr class="text-center table-sangmyung__main_body">
+                    <td class="table-body__number"> 기숙사 </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start">
+                        <a href="{% url 'pybo:detail' question.id %}">테스트1</a>
+                    </td>
+                    <td>20.01.2022</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>9
+                    </td>
+                </tr>
+                <tr class="text-center table-sangmyung__main_body">
+                    <td class="table-body__number"> 2 </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start">
+                        <span class="table-body__new">N</span>
+                        <a href="{% url 'pybo:detail' question.id %}">테스트2</a>
+                    </td>
+                    <td>20.01.2022</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>45
+                    </td>
+                </tr>
+                <tr class="text-center table-sangmyung__main_body">
+                    <td class="table-body__number"> 3 </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start">
+                        <a href="{% url 'pybo:detail' question.id %}">테스트3</a>
+                    </td>
+                    <td>20.01.2022</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                    </td>
+                </tr>
+                <tr class="text-center table-sangmyung__main_body">
+                    <td class="table-body__number"> 4 </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start">
+                        <a href="{% url 'pybo:detail' question.id %}">테스트4</a>
+                    </td>
+                    <td>20.01.2022</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                    </td>
+                </tr>
+                <tr class="text-center table-sangmyung__main_body">
+                    <td class="table-body__number"> 5 </td>
+                    <td class="table-body__proceeding">[진행중]</td>
+                    <td class="text-start">
+                        <span class="table-body__new">N</span>
+                        <a href="{% url 'pybo:detail' question.id %}">테스트5</a>
+                    </td>
+                    <td>20.01.2022</td>
+                    <td class="table-body__like">
+                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--중간선-->
+    <hr style="height:5px;border-width:0;color:gray;background-color:gray">
+
+    <!--공백-->
+   <div class="home-title--hot ">
+
+        <!--진행중인 답변 버튼-->
+       <div>
+        <ul class="nav nav-pills  mb-3 home__table-nav-button navbar-static-top" id="pills-tab" role="tablist">
+          <li class="nav-item home__table-head-roundness--li">
+            <a class="nav-link active asd" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">진행중인 청원</a>
+          </li>
+        <!-- 답변 완료 버튼-->
+          <li class="nav-item home__table-head-roundness--li home__table-nav-button1">
+            <a class="nav-link table-body__complete" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">답변완료</a>
+          </li>
+        </ul>
+       </div>
+       <!--진행중인 답변 리스트-->
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+               <div class="container my-3">
+                    <div class="row row-home">
+                        <table class="table">
+                            <thead class="table-head">
+                                <tr class="text-center table-sangmyung__header">
+                                    <th>분류</th>
+                                    <th>상태</th>
+                                    <th style="width:50%">제목</th>
+                                    <th>청원 일자</th>
+                                    <th>참여 인원</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr class="text-center table-sangmyung__main_body">
+                                    <td class="table-body__number"> 기숙사 </td>
+                                    <td class="table-body__proceeding">[진행중]</td>
+                                    <td class="text-start">
+                                        <a href="{% url 'pybo:detail' question.id %}">테스트1</a>
+                                    </td>
+                                    <td>20.01.2022</td>
+                                    <td class="table-body__like">
+                                        <i class="far fa-thumbs-up table-body__icon"></i>9
+                                    </td>
+                                </tr>
+                                <tr class="text-center table-sangmyung__main_body">
+                                    <td class="table-body__number"> 2 </td>
+                                    <td class="table-body__proceeding">[진행중]</td>
+                                    <td class="text-start">
+                                        <span class="table-body__new">N</span>
+                                        <a href="{% url 'pybo:detail' question.id %}">테스트2</a>
+                                    </td>
+                                    <td>20.01.2022</td>
+                                    <td class="table-body__like">
+                                        <i class="far fa-thumbs-up table-body__icon"></i>45
+                                    </td>
+                                </tr>
+                                <tr class="text-center table-sangmyung__main_body">
+                                    <td class="table-body__number"> 3 </td>
+                                    <td class="table-body__proceeding">[진행중]</td>
+                                    <td class="text-start">
+                                        <a href="{% url 'pybo:detail' question.id %}">테스트3</a>
+                                    </td>
+                                    <td>20.01.2022</td>
+                                    <td class="table-body__like">
+                                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                                    </td>
+                                </tr>
+                                <tr class="text-center table-sangmyung__main_body">
+                                    <td class="table-body__number"> 4 </td>
+                                    <td class="table-body__proceeding">[진행중]</td>
+                                    <td class="text-start">
+                                        <a href="{% url 'pybo:detail' question.id %}">테스트4</a>
+                                    </td>
+                                    <td>20.01.2022</td>
+                                    <td class="table-body__like">
+                                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                                    </td>
+                                </tr>
+                                <tr class="text-center table-sangmyung__main_body">
+                                    <td class="table-body__number"> 5 </td>
+                                    <td class="table-body__proceeding">[진행중]</td>
+                                    <td class="text-start">
+                                        <span class="table-body__new">N</span>
+                                        <a href="{% url 'pybo:detail' question.id %}">테스트5</a>
+                                    </td>
+                                    <td>20.01.2022</td>
+                                    <td class="table-body__like">
+                                        <i class="far fa-thumbs-up table-body__icon"></i>0
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      </div>
                 </div>
+          </div>
+
+       <!-- 답변완료 리스트-->
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+             <div class="container my-3">
+                <div class="row row-home">
+                    <hr>
+                <table class="table">
+                    <thead class="table-head">
+                        <tr class="text-center table-sangmyung__header">
+                            <th>분류</th>
+                            <th>상태</th>
+                            <th style="width:50%">제목</th>
+                            <th>청원 일자</th>
+                            <th>참여 인원</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr class="text-center table-sangmyung__main_body">
+                            <td class="table-body__number"> 기숙사 </td>
+                            <td class="table-body__complete">[답변 완료]</td>
+                            <td class="text-start">
+                                <a href="{% url 'pybo:detail' question.id %}">테스트1</a>
+                            </td>
+                            <td>20.01.2022</td>
+                            <td class="table-body__like">
+                                <i class="far fa-thumbs-up table-body__icon"></i>9
+                            </td>
+                        </tr>
+                        <tr class="text-center table-sangmyung__main_body">
+                            <td class="table-body__number"> 2 </td>
+                            <td class="table-body__complete">[답변 완료]</td>
+                            <td class="text-start">
+                                <span class="table-body__new">N</span>
+                                <a href="{% url 'pybo:detail' question.id %}">테스트2</a>
+                            </td>
+                            <td>20.01.2022</td>
+                            <td class="table-body__like">
+                                <i class="far fa-thumbs-up table-body__icon"></i>45
+                            </td>
+                        </tr>
+                        <tr class="text-center table-sangmyung__main_body">
+                            <td class="table-body__number"> 3 </td>
+                            <td class="table-body__complete">[답변 완료]</td>
+                            <td class="text-start">
+                                <a href="{% url 'pybo:detail' question.id %}">테스트3</a>
+                            </td>
+                            <td>20.01.2022</td>
+                            <td class="table-body__like">
+                                <i class="far fa-thumbs-up table-body__icon"></i>0
+                            </td>
+                        </tr>
+                        <tr class="text-center table-sangmyung__main_body">
+                            <td class="table-body__number"> 4 </td>
+                            <td class="table-body__complete">[답변 완료]</td>
+                            <td class="text-start">
+                                <a href="{% url 'pybo:detail' question.id %}">테스트4</a>
+                            </td>
+                            <td>20.01.2022</td>
+                            <td class="table-body__like">
+                                <i class="far fa-thumbs-up table-body__icon"></i>0
+                            </td>
+                        </tr>
+                        <tr class="text-center table-sangmyung__main_body">
+                            <td class="table-body__number"> 5 </td>
+                            <td class="table-body__complete">[답변 완료]</td>
+                            <td class="text-start">
+                                <span class="table-body__new">N</span>
+                                <a href="{% url 'pybo:detail' question.id %}">테스트5</a>
+                            </td>
+                            <td>20.01.2022</td>
+                            <td class="table-body__like">
+                                <i class="far fa-thumbs-up table-body__icon"></i>0
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                  </div>
+                  </div>
+                </div>
+                    </tbody>
+                  </div>
             </div>
         </div>
-    </section>
-
-    <div include-html="reference/footer.html"></div>
+    </div>
+    <div class="home-title--hot"></div>
 </body>
+<div include-html="reference/footer.html"></div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -41,3 +293,4 @@
   includeHTML();
 </script>
 </html>
+
