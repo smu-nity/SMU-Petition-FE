@@ -27,3 +27,8 @@
 body {
     font-family: 'Nanum Gothic', sans-serif;
 }
+
+.resized-elements {
+    transform: scale(0.75);
+    transform-origin: 50% 0;
+}
