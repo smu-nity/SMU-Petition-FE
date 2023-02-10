@@ -1,0 +1,25 @@
+.post-body {
+    font-family : 고딕;
+    font-size : 18px;
+    font-weight : bold;
+    color : #6c757d;
+    zoom : 0.8;
+}
+.comment {
+    font-size: 25px;
+}
+#content {
+    font-size : 25px;
+}
+
+.button{
+    text-align : left;
+}
+
+.btn {
+    font-size : 15px;
+    font-weight : bold;
+    width : 130px;
+    height : 50px;
+    margin : 5px;
+}
