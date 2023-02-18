@@ -1,7 +1,6 @@
 .post-body {
-    font-family : 고딕;
     font-size : 17px;
-    font-weight : bold;
+    font-weight : 600;
     color : #6c757d;
     zoom : 0.8;
 }
@@ -27,8 +26,9 @@
 }
 
 .btn {
+    display: inline-block;
     font-size : 18px;
-    font-weight : bold;
+    font-weight : 600;
     width : 200px;
     height : 70px;
     margin : 30px;

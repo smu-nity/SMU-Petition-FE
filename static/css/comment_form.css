@@ -1,11 +1,13 @@
-.post-body {
-    font-family : 고딕;
+.comment-body {
     font-size : 18px;
-    font-weight : bold;
+    font-weight : 600;
     color : #6c757d;
     zoom : 0.8;
 }
-.comment {
+.comment-title {
+    color: #2f4db5;
+}
+.comment {햣
     font-size: 25px;
 }
 #content {
@@ -18,7 +20,7 @@
 
 .btn {
     font-size : 15px;
-    font-weight : bold;
+    font-weight : 600;
     width : 130px;
     height : 50px;
     margin : 5px;
