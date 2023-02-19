@@ -27,6 +27,13 @@ body {
 }
 
 .resized-elements {
-    transform: scale(0.75);
+    width: 80%;
+}
+
+.resized {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(0.9);
     transform-origin: 50% 0;
 }
