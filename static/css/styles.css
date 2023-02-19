@@ -20,6 +20,8 @@
 
 /* Components */
 @import "navbar.css";
+@import "navbarMain.css";
+
 
 body {
     font-family: 'Nanum Gothic', sans-serif;

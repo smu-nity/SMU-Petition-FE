@@ -25,3 +25,17 @@
 .navbar-img__text--subtitle {
     font-weight: 300;
 }
+
+
+.nav-margin-60 {
+    margin-top: 60px;
+}
+
+.grid-container {
+  gap: 50px;
+}
+
+.nav-margin-20 {
+    margin-top: 20px;
+}
+
