@@ -9,6 +9,14 @@
     align-items: center;
 }
 
+.petition-search {
+    display: flex;
+}
+
+.petition-search--icon {
+    display: flex;
+}
+
 .petition-info__icon {
     color: black;
     font-size: 50px;
@@ -125,11 +133,11 @@
 }
 
 .table-body__proceeding {
-    color: rgb(42, 80, 135);
+    color: var(--custom_blue);
 }
 
 .table-body__complete {
-    color: rgb(191, 72, 84);
+    color: var(--custom_red);
 }
 
 .text-start {
@@ -165,6 +173,7 @@ td:first-child {
 
 #search_kw {
     margin-right: 20px;
+    border-radius: 5px;
 }
 
 .btn-smu {

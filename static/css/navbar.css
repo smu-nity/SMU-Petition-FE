@@ -18,11 +18,12 @@
 }
 
 .navbar-img__text--title {
-    font-size: 50px;
+    font-size: 45px;
     margin: 20px;
 }
 
 .navbar-img__text--subtitle {
+    font-size: 17px;
     font-weight: 300;
 }
 

@@ -1,4 +1,6 @@
 .post_detail__body_container {
+    transform: scale(0.85);
+    transform-origin: 50% 0;
     width: 80%;
     padding: 30px;
     border: 1px solid rgba(0, 0, 0, 0.3);

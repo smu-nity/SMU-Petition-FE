@@ -12,66 +12,60 @@
 <body>
     <div include-html="reference/navbar.html"></div>
 
-    <div class="resized-elements container my-3 container-post_list">
-        <div class="row row-post_list">
-            <div class="col-1 petition-info__icon">
-                <i class="fas fa-check-double"></i>
-            </div>
-            <div class="col-6 petition-info">
-                <h1 class="petition-info__count">지금까지 총 n 개의 청원과</h1>
-                <h1 class="petition-info__complete">n 개의 답변이 등록되었습니다.</h1>
-            </div>
-            <div class="col-5 enroll-btn">
-                <a href="#search_kw" class="btn btn-primary enroll-btn__btn">
-                    <i class="fas fa-search enroll-btn__icon"></i>청원 검색하기
-                </a>
-                <a href="{% url 'pybo:question_create' %}" class="btn btn-primary enroll-btn__btn">
-                    <i class="fas fa-edit enroll-btn__icon"></i>청원 등록하기
-                </a>
-            </div>
-        </div>
-
-        <div class="container my-3">
-            <div class="row my-3">
-                <div class="col-3">
-                    <div class="input-group">
-                        <input type="text" id="search_kw" class="form-control">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="btn_search">찾기</button>
-                        </div>
-                    </div>
+    <div class="resized">
+        <div class="resized-elements container my-3 container-post_list">
+            <div class="row row-post_list">
+                <div class="col-1 petition-info__icon">
+                    <i class="fas fa-check-double"></i>
                 </div>
-                <div class="col-4"></div>
-                <div class="col-5 petition-warning">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        이런 청원은 숨김/삭제처리 또는 반려 될 수 있습니다.
-                    </button>
+                <div class="col-6 petition-info">
+                    <h2 class="petition-info__count">지금까지 총 n 개의 청원과</h2>
+                    <h2 class="petition-info__complete">n 개의 답변이 등록되었습니다.</h2>
+                </div>
+                <div class="col-5 enroll-btn">
+                    <a href="#search_kw" class="btn btn-primary enroll-btn__btn">
+                        <i class="fas fa-search enroll-btn__icon"></i>검색하기
+                    </a>
+                    <a href="{% url 'pybo:question_create' %}" class="btn btn-primary enroll-btn__btn">
+                        <i class="fas fa-edit enroll-btn__icon"></i>청원하기
+                    </a>
+                </div>
+            </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+            <div class="resized-table">
+                <div class="container my-3">
+                    <div class="row my-3">
+                        <div class="col-4">
+                            <div class="input-group petition-search">
+                                <input type="text" id="search_kw" class="form-control" placeholder="검색할 내용 입력">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary petition-search--icon" type="button"
+                                        id="btn_search">찾기</button>
                                 </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-5 petition-warning">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            first item's accordion body.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
         <table class="table">
             <thead class="table-head">
@@ -234,7 +228,6 @@
                 </tr>
         <div include-html="reference/pagination.html"></div>
     </div>
-
 
     <div include-html="reference/footer.html"></div>
 </body>
