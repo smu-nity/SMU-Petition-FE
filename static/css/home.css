@@ -114,6 +114,15 @@
     display : flex;
     justify-content: center;
     margin-top: 10px;
+
+}
+
+.main-margin-top23-footer {
+    display : flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100px;
+
 }
 
 
@@ -225,7 +234,7 @@
 
 .main-search-by-category-icon {
     display: flex;
-    border-radius : 100px;
+    border-radius : 50%;
     width : 70px;
     height : 70px;
     background-color : white;
@@ -235,7 +244,6 @@
     justify-content: center;
     border-style : solid;
     border-color : gray;
-
 }
 
 .main-search-by-category-icon-details {
@@ -254,4 +262,9 @@
     height: 130px;
     display: flex;
     flex-direction : column;
+}
+
+.main-hot23-footer-div {
+    display : flex;
+
 }
