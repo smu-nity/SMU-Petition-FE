@@ -1,32 +1,38 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" class="html">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Post_form</title>
-    <link rel="stylesheet" href="static/css/styles.css" media="screen">
+    <title>상명대학교 - 청원 등록</title>
+    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="static/css/post_form.css" media="screen">
     <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="post-body">
     <div include-html="reference/navbar.html"></div>
 
 
-    <div class="container">
-        <h5 class="my-5 border-bottom pb-2">청원 등록</h5>
+    <div class="container my-3">
+        <h5 class="post-title border-bottom my-5 pb-2">청원 등록</h5>
         <form method="post" class="post-form my-3">
             <div class="mb-3 row">
                 <label for="classification" class="col-sm-1 col-form-label">분류</label>
                 <div class="col-sm-5">
                     <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="classification">
                         <option selected>선택하세요</option>
-                        <option value="1">..</option>
-                        <option value="2">...</option>
-                        <option value="3">....</option>
+                        <option value="1">전체</option>
+                        <option value="2">학사</option>
+                        <option value="3">일반</option>
+                        <option value="4">사회 봉사</option>
+                        <option value="5">등록/장학</option>
+                        <option value="6">학생 생활</option>
+                        <option value="7">채용</option>
+                        <option value="8">글로벌</option>
+                        <option value="9">진로 취업</option>
+                        <option value="10">비교과</option>
+                        <option value="11">코로나 19</option>
+                        <option value="12">기타</option>
                     </select>
-                </div>
-                <div class="form-check col-auto mt-2">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">HTML</label>
                 </div>
                 <div class="form-check col-auto mt-2">
                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
@@ -43,7 +49,7 @@
                 <label for="content" class="col-sm-1 col-form-label">내용</label>
                 <div class="col-sm-10">
                     <textarea class="form-control form-control-lg" name="content"
-                          id="content" rows="10"></textarea>
+                          id="content" rows="15"></textarea>
                 </div>
             </div>
             <div class="mb-5 row">
@@ -52,15 +58,16 @@
                     <input class="form-control form-control-lg" id="attachment" type="file">
                 </div>
             </div>
-            <div class="button">
-                <button class="btn btn-post_list btn-primary btn-lg rounded-pill" style="background-color: #273295;" type="button">작성 완료</button>
-                <button class="btn btn-post_list btn-primary btn-lg rounded-pill" style="background-color: #343a40;" type="button">취소 하기</button>
+            <div class="post-button">
+                <button class="btn btn-primary btn-lg rounded-pill" style="background-color: #2f4db5;" type="button">작성 완료</button>
+                <button class="btn btn-primary btn-lg rounded-pill" style="background-color: #343a40;" type="button">취소 하기</button>
             </div>
         </form>
+
     </div>
 
 
-    <div include-html="reference/footer.html"></div>
+    <div class="footer" include-html="reference/footer.html"></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -78,11 +85,3 @@
 <script>
   includeHTML();
 </script>
-</html>
-
-
-
-<!--파일추가 파일삭제 버튼 만드는거-->
-<!--코멘트폼 어떻게 할지-->
-<!--내브바 푸터 물어보기-->
-<!--css 저런것만 넣는건지-->

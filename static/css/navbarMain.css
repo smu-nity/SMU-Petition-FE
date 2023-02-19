@@ -1,0 +1,52 @@
+.navbarMain-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sangmyung);
+    font-size: 25px;
+    width: 480px;
+    height: 70px;
+    color: white;
+    border-color: var(--sangmyung);
+    margin: 0px 10px;
+}
+
+.navbarMain-img__text--title {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.navbarMain-img__text--subtitle {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navbarMain-img__text--title {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.navbarMain-img__text--title {
+    font-size: 40px;
+    margin: 20px;
+}
+
+.navbarMain-searchButton {
+    background-color: white;
+    border-radius: 5px;
+    height : 52px;
+    width : 52px;
+
+}
+
+.navbarMain-search-bar {
+    padding-left : 5px;
+}
+
+.navbarMain-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

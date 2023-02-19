@@ -1,4 +1,6 @@
 /* Nanum Gothic - Google Fonts */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 /* bootstrap */
@@ -18,22 +20,27 @@
 
 /* Components */
 @import "navbar.css";
+@import "navbarMain.css";
+
 
 /* Sample */
 @import "comment_data.css";
 
 body {
     font-family: 'Nanum Gothic', sans-serif;
-}
-
-.resized-elements {
+    
+    background-color : #ebecf0;
+    
+    .resized-elements {
     width: 80%;
+    }
+
+    .resized {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transform: scale(0.9);
+      transform-origin: 50% 0;
+     }
 }
 
-.resized {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    transform: scale(0.9);
-    transform-origin: 50% 0;
-}

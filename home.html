@@ -1,29 +1,711 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" xmlns:magin="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="static/css/styles.css" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div include-html="reference/navbar.html"></div>
 
-    <section>
-        <div class="container main_bg">
-            <div class="row justify-content-between">
-                <div class="col-lg-6 text-light"></div>
-                <div class="col-lg-5 mt-5">
-                    <br><br><br><br><br><br>
-                    <h1 class="display-1 fw-bold lh-1 mb-5 text-light">Smunity</h1>
-                    <p class="col-lg-10 fs-1 text-light">상명대학교<br>청원 사이트</p>
+<body>
+    <!--NavbarMain-->
+    <div include-html="reference/navbarMain.html"></div>
+
+    <div style="background-color : #ebecf0">
+
+        <!--MarginSide-->
+        <div style="background-color : #ebecf0; height : 40px;"> </div>
+
+        <div class="container my-3 container-home main-div " style="width : 70%;">
+
+        <!--보기 옵션-->
+        <nav>
+          <div class="nav nav-tabs main-search-option " style="width: 99.3%;" id="nav-tab" role="tablist">
+            <!--최다 동의 순 버튼-->
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                <i class="fas fa-thumbs-up "></i>
+                최다 동의 순
+            </a>
+
+            <!--만료 임박 순 버튼-->
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <i class="far fa-calendar-times"></i>
+                만료 임박 순
+            </a>
+
+            <!--최근 공개 순 버튼-->
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <i class="fas fa-calendar-plus"></i>
+                최근 공개 순
+            </a>
+          </div>
+        </nav>
+
+        <!--옵션 링크-->
+        <div class="tab-content" id="nav-tabContent">
+            <!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순-->
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+            <!--TOP 1 개시글-->
+            <div class="main-top1-div">
+                <div class="card text-center" style="width :98.5%; ">
+
+                    <!--TOP 1 Header-->
+                    <div class="card-header main__top1-card-header" style="height : 80px;">
+
+                        <!--TOP 1 Header-동의기간-->
+                        <div>
+                            <i class="fas fa-bomb" style="font-size : 35px; color : orange;"></i>
+                            <span style="font-size : 26px"> 장학금 |</span>
+                            <span style="font-size : 22px; color: orange;"> 진행중  </span>
+                            <span style="font-size : 23px"> | D-3 </span>
+                        </div>
+
+                        <div class="main-card-title-date">
+                            <i class="far fa-calendar-check" style="font-size: 20px;"></i>
+                            <span style="font-size: 16px;">동의기간 : 2023.02.17 - 2023.02.19</span>
+                        </div>
+                    </div>
+
+
+                    <!--TOP 1 Body-->
+                    <div class="card-body main__top1-card-body ">
+
+                        <div>
+                             <h5 class="card-title main-hot1-title-font" >
+                                <span style="font-size : 35px; color : #387cb3;">장학금 정책을 바꿔주세요.</span>
+                            </h5>
+                            <div style="padding : 4px;"> </div>
+                            <p class="card-text main-Top1-Body-card-text-box" >
+                                장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.
+                                장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.
+                                장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.
+                                장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.
+                                장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.장학금 정책을 바꿔주세요.
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="card-header" style="height : 50px; background-color: white; display : flex;">
+                        <!--TOP 1 Header-동의 사람-->
+                        <div class="main-card-title-date  ">
+                            <i class="fas fa-thumbs-up " style="align-item: center; font-size: 20px; color: #6499E1" ></i>
+                            <span style="font-size: 15px; color: #6499E1 ">120명</span>
+                        </div>
+                    </div>
+
+                    <!--TOP 1 Foot-->
+                    <div class="card-footer text-muted main-card-footer-setting" >
+
+                      <div class="progress" style="height : 20px">
+                        <div class="progress-bar main_progress-bar-stats" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                      </div>
+
+
+                      <div class="main-margin-top1-bottom">
+                          <a href="#" class="btn btn-primary" style="background-color : #6499E1; border-style: none; height: 40px; width : 120px;">
+                              <span style="font-size : 17px; font-weight : 600;">동의하기</span>
+                          </a>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--TOP1 TOP 2 사이 공간-->
+            <div class="home-margin-60"></div>
+
+
+            <div class="home__container-remnant" style="display: flex; justify-content : space-evenly;">
+
+                <!--HOT 2-->
+                <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                    <div class="card text-center">
+
+                    <!--HOT 2 Head-->
+                      <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                        <div>
+                            <span style="font-size : 15px"> 기숙사 |</span>
+                            <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                            <span style="font-size : 15px"> | D-24 </span>
+                        </div>
+
+                          <div>
+                            <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                            <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                          </div>
+                      </div>
+                    </div>
+
+
+                    <!--HOT 2 Body-->
+                    <div class="card-body main-hot23-body" >
+                        <h5 class="card-title main-card-title-font" style="color: #4b2679; " >Special title treatmentmain</h5>
+                    </div>
+
+
+                    <!--HOT 2 동의 사람 수-->
+                    <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                        <div>
+                            <i class="fas fa-thumbs-up" style=" color : #9b77b3;"></i>
+                            <span style="font-size : 15px; color : #9b77b3;"> 45명</span>
+                        </div>
+                    </div>
+
+
+                    <!--HOT 2 Foot-->
+                    <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                      <div class="progress" style="">
+                        <div
+                            class="progress-bar" role="progressbar" style="width: 25%; background-color: #9b77b3;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>
+                      </div>
+
+                        <div class="main-margin-top1-bottom" style="justify-content : center;">
+                            <a href="#" class="btn btn-primary" style="background-color: #9b77b3; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--HOT 3-->
+                <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                    <!--HOT 3 Head-->
+                    <div class="card text-center">
+                      <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                        <div>
+                            <span style="font-size : 15px"> 기숙사 |</span>
+                            <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                            <span style="font-size : 15px"> | D-12 </span>
+                        </div>
+
+                          <div>
+                            <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                            <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!--HOT 3 Body-->
+                    <div class="card-body main-hot23-body" >
+                        <h5 class="card-title main-card-title-font" style="color: #20663f;">Special title treatment</h5>
+                    </div>
+
+                    <!--HOT 3 동의 사람 수-->
+                    <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                        <div>
+                            <i class="fas fa-thumbs-up" style=" color : #3CB371;"></i>
+                            <span style="font-size : 15px; color : #3CB371;"> 21명</span>
+                        </div>
+                    </div>
+
+                    <!--HOT 3 Foot-->
+                    <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                      <div class="progress" style="">
+                        <div
+                            class="progress-bar" role="progressbar" style="width: 25%; background-color: #3CB371;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>
+                      </div>
+
+                        <div class="main-margin-top1-bottom" style="justify-content : center;">
+                            <a href="#" class="btn btn-primary" style="background-color: #3CB371;; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+          </div><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순--><!--옵션 최다 동의 순-->
+
+
+        <!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순-->
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <!--TOP 1 개시글-->
+        <div class="main-top1-div">
+            <div class="card text-center" style="width :98.5%; ">
+
+                <!--TOP 1 Header-->
+                <div class="card-header main__top1-card-header" style="height : 80px;">
+
+                    <!--TOP 1 Header-동의기간-->
+                    <div>
+                        <i class="fas fa-bomb" style="font-size : 35px; color : orange;"></i>
+                        <span style="font-size : 26px"> 장학금 |</span>
+                        <span style="font-size : 22px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 23px"> | D-1 </span>
+                    </div>
+
+                    <div class="main-card-title-date">
+                        <i class="far fa-calendar-check" style="font-size: 20px;"></i>
+                        <span style="font-size: 16px;">동의기간 : 2023.02.17 - 2023.02.19</span>
+                    </div>
+                </div>
+
+
+                <!--TOP 1 Body-->
+                <div class="card-body main__top1-card-body ">
+                    <div>
+                        <h5 class="card-title main-hot1-title-font" >
+                        <span style="font-size : 40px; color : #387cb3;">Special title treatment</span>
+                    </h5>
+                    <div style="padding : 4px;"> </div>
+
+                    <p class="card-text main-Top1-Body-card-text-box">
+                        초·중·고 12년에 대학까지 졸업해도 글쓰기는 여전히 어렵고 두렵다. 글을 잘 쓴다고 하는 이들을 부러워만 할 뿐 정작 자신은 시도조차 않는 이들이 태반이다. 글쓰기를 마치 천부의 재능처럼 여긴 탓이다.
+글쓰기는 기술이다. 꾸준하게 연습한다면 누구나 잘 쓸 수 있다. 반대로 직접 써보지 않으면 백날 글쓰기 책을 읽는다 해도 절대로 늘지 않는다. 문학 장르의 글을 쓰기 위해선 어느 정도 감성이 뒷받침돼야 하겠지만, 일상적인 글은 몇 가지 기본 규칙과 세부적인 기술을 익힌 뒤 반복하면 잘 쓸 수 있다.
+자전거를 처음 배우는 사람들은 자전거 묘기를 배우려는 게 아니다. 목적지까지 안전하게 갈 수 있기만 하면 대만족이다. 글쓰기 역시 마찬가지다. 화려한 수식어가 들어간 멋진 글을 목적으로 삼지 마라. 자신의 생각을 다른 사람에게 정확하게 전달하는 게 가장 먼저 할 일이다.
+
+
+                    </p>
+
+
+                    </div>
+                </div>
+
+                <div class="card-header" style="height : 50px; background-color: white; display : flex;">
+                    <!--TOP 1 Header-동의 사람-->
+                    <div class="main-card-title-date  ">
+                        <i class="fas fa-thumbs-up " style="align-item: center; font-size: 20px; color: #6499E1" ></i>
+                        <span style="font-size: 15px; color: #6499E1 ">120명</span>
+                    </div>
+                </div>
+
+                <!--TOP 1 Foot-->
+                <div class="card-footer text-muted main-card-footer-setting" >
+
+                  <div class="progress" style="height : 20px">
+                    <div class="progress-bar main_progress-bar-stats" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                  </div>
+
+
+                  <div class="main-margin-top1-bottom">
+                      <a href="#" class="btn btn-primary" style="background-color : #6499E1; border-style: none; height: 40px; width : 120px;">
+                          <span style="font-size : 17px; font-weight : 600;">동의하기</span>
+                      </a>
+                  </div>
+
                 </div>
             </div>
         </div>
-    </section>
 
-    <div include-html="reference/footer.html"></div>
+
+        <!--TOP1 TOP 2 사이 공간-->
+        <div class="home-margin-60"></div>
+
+
+        <div class="home__container-remnant" style="display: flex; justify-content : space-evenly;">
+
+            <!--HOT 2-->
+            <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                <div class="card text-center">
+
+                <!--HOT 2 Head-->
+                  <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                    <div>
+                        <span style="font-size : 15px"> 기숙사 |</span>
+                        <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 15px"> | D-3 </span>
+                    </div>
+
+                      <div>
+                        <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                        <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                      </div>
+                  </div>
+                </div>
+
+
+                <!--HOT 2 Body-->
+                <div class="card-body main-hot23-body">
+                    <h5 class="card-title main-card-title-font" style="color: #4b2679;" >Special title treatment</h5>
+                </div>
+
+
+                <!--HOT 2 동의 사람 수-->
+                <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                    <div>
+                        <i class="fas fa-thumbs-up" style=" color : #9b77b3;"></i>
+                        <span style="font-size : 15px; color : #9b77b3;"> 45명</span>
+                    </div>
+                </div>
+
+
+                <!--HOT 2 Foot-->
+                <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                  <div class="progress" style="">
+                    <div
+                        class="progress-bar" role="progressbar" style="width: 25%; background-color: #9b77b3;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                  </div>
+
+                    <div class="main-margin-top1-bottom" style="justify-content : center;">
+                        <a href="#" class="btn btn-primary" style="background-color: #9b77b3; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--HOT 3-->
+            <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                <!--HOT 3 Head-->
+                <div class="card text-center">
+                  <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                    <div>
+                        <span style="font-size : 15px"> 코로나 19 |</span>
+                        <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 15px"> | D-5 </span>
+                    </div>
+
+                      <div>
+                        <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                        <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                      </div>
+                  </div>
+                </div>
+
+                <!--HOT 3 Body-->
+                <div class="card-body main-hot23-body" >
+                    <h5 class="card-title main-card-title-font" style="color: #20663f;">Special title treatment</h5>
+                </div>
+
+                <!--HOT 3 동의 사람 수-->
+                <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                    <div>
+                        <i class="fas fa-thumbs-up" style=" color : #3CB371;"></i>
+                        <span style="font-size : 15px; color : #3CB371;"> 21명</span>
+                    </div>
+                </div>
+
+                <!--HOT 3 Foot-->
+                <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                  <div class="progress" style="">
+                    <div
+                        class="progress-bar" role="progressbar" style="width: 25%; background-color: #3CB371;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                  </div>
+
+                    <div class="main-margin-top1-bottom" style="justify-content : center;">
+                        <a href="#" class="btn btn-primary" style="background-color: #3CB371;; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </div><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순--><!--만료 임박 순-->
+
+
+
+        <!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순-->
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <!--TOP 1 개시글-->
+        <div class="main-top1-div">
+            <div class="card text-center" style="width :98.5%; ">
+
+                <!--TOP 1 Header-->
+                <div class="card-header main__top1-card-header" style="height : 80px;">
+
+                    <!--TOP 1 Header-동의기간-->
+                    <div>
+                        <i class="fas fa-bomb" style="font-size : 35px; color : orange;"></i>
+                        <span style="font-size : 26px"> 기숙사 |</span>
+                        <span style="font-size : 22px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 23px"> | D-31 </span>
+                    </div>
+
+                    <div class="main-card-title-date">
+                        <i class="far fa-calendar-check" style="font-size: 20px;"></i>
+                        <span style="font-size: 16px;">동의기간 : 2023.02.17 - 2023.02.19</span>
+                    </div>
+                </div>
+
+
+                <!--TOP 1 Body-->
+                <div class="card-body main__top1-card-body ">
+
+                        <div>
+                         <h5 class="card-title main-hot1-title-font" >
+                            <span style="font-size : 35px; color : #387cb3;">장학금 정책을 바꿔주세요.</span>
+                        </h5>
+                        <div style="padding : 4px;"> </div>
+                            <p class="card-text main-Top1-Body-card-text-box">
+
+초·중·고 12년에 대학까지 졸업해도 글쓰기는 여전히 어렵고 두렵다. 글을 잘 쓴다고 하는 이들을 부러워만 할 뿐 정작 자신은 시도조차 않는 이들이 태반이다. 글쓰기를 마치 천부의 재능처럼 여긴 탓이다. 글쓰기는 기술이다. 꾸준하게 연습한다면 누구나 잘 쓸 수 있다. 반대로 직접 써보지 않으면 백날 글쓰기 책을 읽는다 해도 절대로 늘지 않는다. 문학 장르의 글을 쓰기 위해선 어느 정도 감성이 뒷받침돼야 하겠지만, 일상적인 글은 몇 가지 기본 규칙과 세부적인 기술을 익힌 뒤 반복하면 잘 쓸 수 있다. 자전거를 처음 배우는 사람들은 자전거 묘기를 배우려는 게 아니다. 목적지까지 안전하게 갈 수 있기만 하면 대만족이다. 글쓰기 역시 마찬가지다. 화려한 수식어가 들어간 멋진 글을 목적으로 삼지 마라. 자신의 생각을 다른 사람에게 정확하게 전달하는 게 가장 먼저 할 일이다.
+
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                <div class="card-header" style="height : 50px; background-color: white; display : flex;">
+                    <!--TOP 1 Header-동의 사람-->
+                    <div class="main-card-title-date  ">
+                        <i class="fas fa-thumbs-up " style="align-item: center; font-size: 20px; color: #6499E1" ></i>
+                        <span style="font-size: 15px; color: #6499E1 ">120명</span>
+                    </div>
+                </div>
+
+                <!--TOP 1 Foot-->
+                <div class="card-footer text-muted main-card-footer-setting" >
+
+                  <div class="progress" style="height : 20px">
+                    <div class="progress-bar main_progress-bar-stats" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+                  </div>
+
+
+                  <div class="main-margin-top1-bottom">
+                      <a href="#" class="btn btn-primary" style="background-color : #6499E1; border-style: none; height: 40px; width : 120px;">
+                          <span style="font-size : 17px; font-weight : 600;">동의하기</span>
+                      </a>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--TOP1 TOP 2 사이 공간-->
+        <div class="home-margin-60"></div>
+
+
+        <div class="home__container-remnant" style="display: flex; justify-content : space-evenly;">
+
+            <!--HOT 2-->
+            <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                <div class="card text-center">
+
+                <!--HOT 2 Head-->
+                  <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                    <div>
+                        <span style="font-size : 15px"> 기숙사 |</span>
+                        <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 15px"> | D-24 </span>
+                    </div>
+
+                      <div>
+                        <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                        <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                      </div>
+                  </div>
+                </div>
+
+
+                <!--HOT 2 Body-->
+                <div class="card-body main-hot23-body">
+                    <h5 class="card-title main-card-title-font" style="color: #4b2679;" >기숙사를 개편해 주십시오.</h5>
+                </div>
+
+
+                <!--HOT 2 동의 사람 수-->
+                <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                    <div>
+                        <i class="fas fa-thumbs-up" style=" color : #9b77b3;"></i>
+                        <span style="font-size : 15px; color : #9b77b3;"> 45명</span>
+                    </div>
+                </div>
+
+
+                <!--HOT 2 Foot-->
+                <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                  <div class="progress" style="">
+                    <div
+                        class="progress-bar" role="progressbar" style="width: 25%; background-color: #9b77b3;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                  </div>
+
+                    <div class="main-margin-top1-bottom" style="justify-content : center;">
+                        <a href="#" class="btn btn-primary" style="background-color: #9b77b3; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--HOT 3-->
+            <div class="card text-right home__container-remnant-top2" style="width: 49%;">
+
+                <!--HOT 3 Head-->
+                <div class="card text-center">
+                  <div class="card-header main__top1-card-header" style="display : flex; justify-content : space-between;">
+                    <div>
+                        <span style="font-size : 15px"> 기숙사 |</span>
+                        <span style="font-size : 15px; color: orange;"> 진행중  </span>
+                        <span style="font-size : 15px"> | D-19 </span>
+                    </div>
+
+                      <div>
+                        <i class="far fa-calendar-check " style="font-size: 15px;"></i>
+                        <span style="font-size : 13px;"> 동의기간: 02.17 - 02.19</span>
+                      </div>
+                  </div>
+                </div>
+
+                <!--HOT 3 Body-->
+                <div class="card-body main-hot23-body">
+                    <h5 class="card-title main-card-title-font" style="color: #20663f;">Special title </h5>
+                </div>
+
+                <!--HOT 3 동의 사람 수-->
+                <div class="card-header" style="display : flex; justify-content : space-between; background-color: white;">
+                    <div>
+                        <i class="fas fa-thumbs-up" style=" color : #3CB371;"></i>
+                        <span style="font-size : 15px; color : #3CB371;"> 21명</span>
+                    </div>
+                </div>
+
+                <!--HOT 3 Foot-->
+                <div class="card-footer text-muted" style="background-color : #cdd0da; justify-content: center; ">
+                  <div class="progress" style="">
+                    <div
+                        class="progress-bar" role="progressbar" style="width: 25%; background-color: #3CB371;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                  </div>
+
+                    <div class="main-margin-top1-bottom" style="justify-content : center;">
+                        <a href="#" class="btn btn-primary" style="background-color: #3CB371;; border-style: none; height : 50%; align-items: center; ">동의하기</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+          </div>
+        </div><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순--><!--최근 공개 순-->
+        <div class="home-margin-top"> </div>
+
+
+        <!--항목 별 분류-->
+        <div style="display:flex; justify-content : center;">
+            <span> | 항목 별 분류 |</span>
+        </div>
+
+        <hr>
+
+        <!--항목 별 분류 버튼 세트 -->
+        <div style="display : flex; justify-content: space-between;" >
+
+                <!--학사 버튼-->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-user-graduate main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">학사</span>
+                </div>
+
+
+                <!--일반 버튼-->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-random main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">일반</span>
+                </div>
+
+                <!--사회 봉사 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-hands-helping main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">사회봉사</span>
+                </div>
+
+                <!--등록/장학 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-won-sign main-search-by-category-icon-details" ></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font" style="font-size: 16.5px;">등록/장학</span>
+                </div>
+
+                <!--학생 생활 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-university main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">학생생활</span>
+                </div>
+
+                <!--채용 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-people-arrows main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">채용</span>
+                </div>
+
+                <!--글로벌 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-globe-asia main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">글로벌</span>
+                </div>
+
+                <!--진로취업 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-briefcase main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">진로취업</span>
+                </div>
+
+                <!--비교과 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-book-reader main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">비교과</span>
+                </div>
+
+                <!--코로나19 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-viruses main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">코로나19</span>
+                </div>
+
+                <!--기타 버튼 -->
+                <div class="main-search-by-category-icon-div">
+                    <a class="btn btn-primary main-search-by-category-icon " href="#" role="button">
+                        <i class="fas fa-question-circle main-search-by-category-icon-details"></i>
+                    </a>
+                    <span class="main-search-by-category-icon-font">기타</span>
+                </div>
+
+
+
+
+
+
+        <!--밑에 칸-->
+
+
+
+
+    </div>
+
+    </div>
+    <div class="home-margin-top"> </div>
+
+
+
+
+    <div class="home-title--hot"></div>
 </body>
+
+<div include-html="reference/footer.html"></div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -41,3 +723,4 @@
   includeHTML();
 </script>
 </html>
+

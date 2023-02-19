@@ -27,14 +27,14 @@
     font-weight: 300;
 }
 
-@media (max-width: 990px) {
-    .navbar-img__text {
-        margin: 70px;
-        text-align: center;
-        font-size: 15px;
-    }
+.nav-margin-60 {
+    margin-top: 60px;
+}
 
-    .navbar-img__text--title {
-        font-size: 35px;
-    }
+.grid-container {
+  gap: 50px;
+}
+
+.nav-margin-20 {
+    margin-top: 20px;
 }
