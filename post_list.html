@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>상명대학교 - 청원게시판</title>
     <link rel="stylesheet" href="static/css/styles.css" media="screen">
     <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
 <body>
     <div include-html="reference/navbar.html"></div>
 
-    <div class="container my-3 container-post_list">
+    <div class="resized-elements container my-3 container-post_list">
         <div class="row row-post_list">
             <div class="col-1 petition-info__icon">
                 <i class="fas fa-check-double"></i>
@@ -43,19 +43,30 @@
                 </div>
                 <div class="col-4"></div>
                 <div class="col-5 petition-warning">
-                    <button class="btn btn-primary btn-smu" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">이런 청원은 삭제/숨김 또는 반려 처리 될 수
-                        있습니다.</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        이런 청원은 숨김/삭제처리 또는 반려 될 수 있습니다.
+                    </button>
 
-                    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
-                        aria-labelledby="offcanvasTopLabel">
-                        <div class="offcanvas-header">
-                            <h4 id="offcanvasTopLabel">이런 청원은 삭제/숨김 또는 반려 처리될 수 있습니다.</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            ...
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -221,9 +232,6 @@
                         <i class="far fa-comment table-body__icon"></i>0
                     </td>
                 </tr>
-
-            </tbody>
-        </table>
         <div include-html="reference/pagination.html"></div>
     </div>
 
