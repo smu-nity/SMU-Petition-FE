@@ -224,12 +224,34 @@
 }
 
 .main-search-by-category-icon {
+    display: flex;
     border-radius : 100px;
-    width : 100px;
-    height : 100px;
+    width : 70px;
+    height : 70px;
     background-color : white;
     border-style: none;
     color : black;
+    align-items : center;
+    justify-content: center;
+    border-style : solid;
+    border-color : gray;
 
+}
 
+.main-search-by-category-icon-details {
+    font-size : 25px;
+}
+
+.main-search-by-category-icon-font {
+    display: flex;
+    justify-content: center;
+    padding-top : 5px;
+    font-size: 17px;
+}
+
+.main-search-by-category-icon-div {
+    width : 70px;
+    height: 130px;
+    display: flex;
+    flex-direction : column;
 }
