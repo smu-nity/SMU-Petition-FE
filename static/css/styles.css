@@ -20,6 +20,8 @@
 
 /* Components */
 @import "navbar.css";
+@import "navbarMain.css";
+
 
 /* Sample */
 @import "comment_data.css";

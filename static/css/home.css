@@ -15,15 +15,16 @@
     background-color: white;
     transition: all 0.3s ease-in-out;
 }
-.home-title--hot {
+.home-margin-top {
     margin-top: 100px;
 }
 
-.home-margin-150 {
-    margin-top: 100px;
+.home-margin-60 {
+    margin-top: 60px;
 }
 
 .container-home {
+    display:flex;
     width: 70%;
 }
 
@@ -54,4 +55,181 @@
     border-radius: 7px;
 
 }
+.main-button-groups {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.home__card-w-50-font {
+    font-size: 15px;
+}
+
+.home__container-top1 {
+    height: 30%;
+    align-items: center;
+}
+
+.home__container-remnant {
+    height: 50%;
+    space-evenly: center;
+}
+
+.home__container-remnant-top2 {
+    width : 50%;
+    align-items: space-between;
+}
+
+.padding-10-left {
+    margin-left: 10px;
+}
+
+.main__agree-button {
+    width : 100px;
+}
+
+.main__top1-card-header {
+    display : flex;
+    justify-content: space-between;
+    background: var(--sangmyung);
+    color : white;
+    align-items : center;
+}
+
+.main__top1-card-body {
+    height : 300px;
+    width : 950px;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    overflow: auto
+}
+
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-margin-top1-bottom {
+    display : flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+.main-card-title-date{
+    justify-content: flex;
+    align-items: left;
+}
+
+.main__top1-card-header-HOT01{
+    display : flex;
+    align-items : center;
+}
+
+.main-popular-icon {
+    font-size: 12px;
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: red;
+    font-size: 25px;
+    font-weight : 1200
+}
+
+
+.main__top1-card-header-date {
+    display : flex;
+    justify-content: center;
+    background: var(--sangmyung);
+
+}
+
+.main-body__day-remnant-div {
+    display : flex;
+    align-items : center;
+
+}
+
+.main-body__day-remnant-icon {
+    display : flex;
+    font-weight : 900;
+    align-items : center;
+    font-size: 30px;
+}
+
+.main-top1-div {
+    display : flex;
+    justify-content: center;
+    border-radius : 4px;
+    height : 100%;
+
+}
+
+.main_progress-bar-stats {
+    width: 65%;
+    background-color: #6499E1;
+    font-size : 15px;
+}
+
+.main-card-footer-setting {
+    background-color : #cdd0da;
+    height : 23%;
+    display = flex;
+    flex-direction : column;
+    align-item : center;
+    padding-top : 30px
+}
+.main-space__icon {
+    margin-right: 5px;
+}
+
+.main-search-option {
+    display : flex;
+    justify-content : end;
+
+}
+
+.main-Top1-Body-card-text-box {
+    display: flex;
+    justify-content: center;
+    font-size : 20px;
+    font-weight : 10;
+    width : 700px;
+}
+
+.main-hot23-body {
+    display:flex;
+    height: 130px;
+    overflow : hidden;
+    justify-content : center;
+
+}
+.main-card-title-font {
+    font-size : 27px;
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    width : 400px;
+    height : 100px;
+}
+
+.main-hot1-title-font {
+    font-size : 27px;
+    display: flex;
+    justify-content: start;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.main-search-by-category-icon {
+    border-radius : 100px;
+    width : 100px;
+    height : 100px;
+    background-color : white;
+    border-style: none;
+    color : black;
+
+
+}
