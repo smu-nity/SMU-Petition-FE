@@ -7,18 +7,19 @@
 .comment-title {
     color: #2f4db5;
 }
-.comment {햣
+.comment {
     font-size: 25px;
 }
 #content {
     font-size : 25px;
 }
 
-.button{
-    text-align : left;
+.comment-button{
+    display: flex;
 }
 
 .btn {
+    display: inline-block;
     font-size : 15px;
     font-weight : 600;
     width : 130px;

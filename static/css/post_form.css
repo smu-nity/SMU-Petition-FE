@@ -21,8 +21,9 @@
     color : #495057;
 }
 
-.button{
-    text-align : center;
+.post-button{
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
