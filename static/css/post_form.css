@@ -1,34 +1,35 @@
-body {
-    font-family: 고딕;
-    font-size: 18px;
-    font-weight: bold;
-    color: #6c757d;
+.post-body {
+    font-size : 17px;
+    font-weight : 600;
+    color : #6c757d;
+    zoom : 0.8;
 }
 
-h5 {
-    color: red;
-    font-size: 3em;
+.post-title {
+    color : red;
+    font-size : 3em;
 }
 
 .form-check-label {
-    font-size: 16px;
-    font-weight: 500;
+    font-size : 16px;
+    font-weight : 500;
 }
 
-.form-select {
-    font-size: 17px;
-    font-weight: 600;
-    color: #495057;
+#classification {
+    font-size : 17px;
+    font-weight : 600;
+    color : #495057;
 }
 
-.button {
-    text-align: center;
+.button{
+    text-align : center;
 }
 
-.btn-post_list {
-    font-size: 18px;
-    font-weight: bold;
-    width: 200px;
-    height: 70px;
-    margin: 20px;
+.btn {
+    display: inline-block;
+    font-size : 18px;
+    font-weight : 600;
+    width : 200px;
+    height : 70px;
+    margin : 30px;
 }
