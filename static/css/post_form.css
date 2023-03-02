@@ -6,8 +6,11 @@
 }
 
 .post-title {
-    color : red;
+    text-align: center;
+    color : #003D91;
     font-size : 3em;
+    font-weight: 600;
+    margin: 20px;
 }
 
 .form-check-label {

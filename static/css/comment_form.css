@@ -5,7 +5,9 @@
     zoom : 0.8;
 }
 .comment-title {
-    color: #2f4db5;
+    color: #003D91;
+    text-align: center;
+    font-weight: 600;
 }
 .comment {
     font-size: 25px;
