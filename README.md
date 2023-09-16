@@ -1,12 +1,12 @@
-# SMU
+# SMU Petition Front-End
 
-### 상명대학교 커뮤니티 사이트
+### 상명대학교 청원 사이트 프론트엔드
 
 ---
 
-## :computer: 프로젝트 소개
+## :star: Website URL
 
-* ### 상명대학교 커뮤니티 사이트
+* ### https://smu-petition.com
 
 ## ⚒️기술 스택
 
